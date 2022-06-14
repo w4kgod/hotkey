@@ -1,0 +1,11 @@
+local mouse = game.Players.LocalPlayer:GetMouse()
+
+mouse.KeyDown:Connect(function(key)
+if key == hotkey1 then
+if getgenv().DaHoodSettings.SilentAim == true then
+ getgenv().DaHoodSettings.SilentAim = false
+else
+getgenv().DaHoodSettings.SilentAim = true
+end
+end
+end)
