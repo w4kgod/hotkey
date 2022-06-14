@@ -1,0 +1,11 @@
+local mouse = game.Players.LocalPlayer:GetMouse()
+
+mouse.KeyDown:Connect(function(key)
+if key == hotkey2 then
+if getgenv().Aiming.ShowFOV == true then
+ getgenv().Aiming.ShowFOV = false
+else
+getgenv().Aiming.ShowFOV = true
+end
+end
+end)
